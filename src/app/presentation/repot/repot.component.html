@@ -1,0 +1,58 @@
+
+
+
+
+    <div class="container-general">
+ 
+<div class="Tableau">
+    <div class="container-table">
+        <div class="table">
+            <div class="back">
+                <h5><a href="#"routerLink="/">back</a></h5>
+        
+            </div>
+        
+            <h2>Report </h2>
+
+            <form action="" method="post">
+               
+
+            <div class="input-boite-2">
+                <select name="report_type" required class="champ-input">
+                    <option value="">Choisir...</option>
+                    <option value="student">list student</option>
+                    <option value="teacher">list teacher</option>
+                    <option value="user">list user</option>
+                </select>
+            </div>
+
+            <div class="btn">
+                <button type="submit" name="inscrire" class="annuler"><a href="/report/pdf/user">Générer format pdf</a></button>
+                <button type="submit" name="enregistrer" class="inscrire">  <a href="">Générer format excel</a> </button>
+            </div>
+        </form>
+
+        </div>
+    
+
+</div>
+
+<!--script>
+    function generatePDF() {
+        const reportType = document.getElementById('report_type').value;
+        window.location.href = /report/pdf/${reportType}/;
+    }
+
+    function generateExcel() {
+        const reportType = document.getElementById('report_type').value;
+        window.location.href = /report/excel/${reportType}/;
+    }
+</script-->
+</div>
+          
+    
+
+
+
+
+   

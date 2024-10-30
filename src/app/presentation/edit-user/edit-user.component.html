@@ -1,0 +1,38 @@
+
+    <div class="container-general">
+ 
+<div class="Tableau">
+    <div class="back">
+        <h5><a href="/dashbord"routerLink="/dashbord" >back</a></h5>
+
+    </div>
+    <div class="titre">
+        <h2>Edit user information</h2>
+    </div>
+    <div class="formuaire" >
+        <form [formGroup]="formEditUser" class="formulaire">
+           
+            <div class="formu">
+                <label for="exampleFormControlInput">speudo</label>
+                <input type="text" [class.is-invalid]="isInvalidInput(formEditUser.controls['speudo'])" placeholder="nom">
+
+            </div>
+            <div class="formu">
+                <label for="exampleFormControlInput">password</label>
+                <input type="text" [class.is-invalid]="isInvalidInput(formEditUser.controls['password'])" placeholder="prenon">
+
+            </div>
+            <div class="form-buttons">
+                <button type="reset" class="cancel-btn">Cancel</button>
+                <button type="submit" class="submit-btn">Send</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</div>
+          
+    
+
+        
+    

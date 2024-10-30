@@ -1,0 +1,33 @@
+
+
+    <div class="connexion">
+        <div class="titre">
+            <h1><img src=""
+                width="50px"
+                height="50px"
+                class="logo">my etab
+            </h1>
+        <div>
+            <form [formGroup]="formlogin" class="formulaire">
+           
+                <div class="formu">
+                    <label for="exampleFormControlInput">speudo</label>
+                    <input type="text" [class.is-invalid]="isInvalidInput(formlogin.controls['speudo'])" placeholder="speudo">
+    
+                </div>
+                <div class="formu">
+                    <label for="exampleFormControlInput">password</label>
+                    <input type="text" [class.is-invalid]="isInvalidInput(formlogin.controls['password'])" placeholder="mot de passe">
+    
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                    <a  routerLink="/dashbord" href="/dashbord" class="submit-btn">Send</a>
+                </div>
+            </form>
+        </div>
+    
+
+    </div>
+
